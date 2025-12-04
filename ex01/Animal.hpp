@@ -13,9 +13,9 @@ class Animal {
 	Animal(const Animal& other);
 	Animal& operator=(const Animal& other);
 	virtual ~Animal();
-
+	// virtual をつけないと派生クラスのデストラクタが呼ばれない可能性がある
 	virtual void makeSound() const;
-	std::string getType() const;
+	std::string  getType() const;
 };
 
 #endif

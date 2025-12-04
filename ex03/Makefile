@@ -1,17 +1,15 @@
-NAME = Brain
+NAME = Materia
 
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic
 
 SRCS = \
 		main.cpp \
-		Animal.cpp \
-		Dog.cpp \
-		Cat.cpp \
-		WrongAnimal.cpp \
-		WrongDog.cpp \
-		WrongCat.cpp \
-		Brain.cpp
+		AMateria.cpp \
+		Character.cpp \
+		Cure.cpp \
+		Ice.cpp \
+		MateriaSource.cpp \
 
 
 OBJS = $(SRCS:%.cpp=%.o)
