@@ -115,7 +115,6 @@ int main()
 	std::cout << "This is now a brain" << std::endl;
 	std::cout << std::endl;
 
-
 	// printColor("SHALLOW COPY", RED);
 	// WrongDog wa;
 	// std::cout << std::endl;
