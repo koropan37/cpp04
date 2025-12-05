@@ -2,7 +2,7 @@
 #define ICHARACTER_HPP_
 
 #include "AMateria.hpp"
-
+#include <string>
 class ICharacter
 {
  public:

@@ -1,7 +1,8 @@
 #include "AMateria.hpp"
+#include "ICharacter.hpp"
 #include <iostream>
 
-AMateria::AMateria() : type_("gem") {}
+AMateria::AMateria() : type_("Normal") {}
 
 AMateria::AMateria(std::string const& type) : type_(type) {}
 

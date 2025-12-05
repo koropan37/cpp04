@@ -15,8 +15,12 @@ class MateriaSource : public IMateriaSource {
 	MateriaSource& operator=(const MateriaSource& other);
 	~MateriaSource();
 
-	void 	  learnMateria(AMateria* mat);
+	void 	  learnMateria(AMateria* m);
 	AMateria* createMateria(std::string const & type);
+
+	void	copyInventory(const MateriaSource&other);
+	void	cloneInventory(const MateriaSource&other, AMateria *tmp[slot_size_]);
+	void	swapInventory(AMateria *tmp[slot_size_]);
 };
 
 #endif

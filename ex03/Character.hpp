@@ -22,6 +22,10 @@ class Character : public ICharacter {
 	void 				equip(AMateria* m);
 	void 				unequip(int idx);
 	void 				use(int idx, ICharacter& target);
+
+	void 				copyInventory(const Character& other);
+	void 				cloneInventory(const Character& other, AMateria *tmp[slot_size_]);
+	void 				swapInventory(AMateria *tmp[slot_size_]);
 };
 
 #endif
